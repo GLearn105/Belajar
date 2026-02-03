@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ConsoleApp1
 {
-    class List
+    class ListTask
     {
         static void Main()
         {
@@ -23,7 +23,6 @@ namespace ConsoleApp1
             {
                 Console.WriteLine(number);
             }
-            // Console.WriteLine(numbers[0] + " " + numbers[1] + " " + numbers[2]);
             Console.WriteLine("Angka terbesar: " + numbers.Max());
         }
     }
