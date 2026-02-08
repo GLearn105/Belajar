@@ -3,8 +3,8 @@ namespace OOP
 {
     class Person
     {
-        private string Name;
-        private int Score;
+        private string name;
+        private int score;
 
         public Person(string name, int score)
         {
@@ -17,8 +17,9 @@ namespace OOP
             get { return name; }
             set { 
                 if (!string.IsNullOrEmpty(value)) 
-                name = "unknown"; 
-                else name : value;}
+                name = value; 
+                else 
+                name = "unknown";}
         }
 
         public int Score
