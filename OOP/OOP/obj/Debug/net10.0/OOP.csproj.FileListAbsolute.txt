@@ -1,0 +1,15 @@
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.AssemblyInfoInputs.cache
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.AssemblyInfo.cs
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.csproj.CoreCompileInputs.cache
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.sourcelink.json
+C:\Belajar\OOP\OOP\bin\Debug\net10.0\OOP.exe
+C:\Belajar\OOP\OOP\bin\Debug\net10.0\OOP.deps.json
+C:\Belajar\OOP\OOP\bin\Debug\net10.0\OOP.runtimeconfig.json
+C:\Belajar\OOP\OOP\bin\Debug\net10.0\OOP.dll
+C:\Belajar\OOP\OOP\bin\Debug\net10.0\OOP.pdb
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.dll
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\refint\OOP.dll
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.pdb
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\OOP.genruntimeconfig.cache
+C:\Belajar\OOP\OOP\obj\Debug\net10.0\ref\OOP.dll
