@@ -37,6 +37,26 @@ namespace OOP
             
         }
 
+        public void Addscore(int value)
+        {
+            Score += value;
+        }
+
+        public void ResetScore()
+        {
+            Score = 0;
+        }
+
+        public bool IsPassed()
+        {
+            return Score >= 75;
+        }
+
+        public void GetInfo()
+        {
+            Console.WriteLine("Name: " + Name + ", Score: " + Score);
+        }
+
         public void CheckStatus()
         {
             if (Score >= 75)
