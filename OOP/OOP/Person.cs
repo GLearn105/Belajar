@@ -37,14 +37,16 @@ namespace OOP
             
         }
 
-        public void Addscore(int value)
+        public void AddScore(int value)
         {
-            Score += value;
+            if (value > 0)
+                Score += value;
         }
 
         public void ReduceScore(int value)
         {
-            Score -= value;
+            if (value > 0)
+                Score -= value;
         }
 
         public void ResetScore()
@@ -62,25 +64,24 @@ namespace OOP
             Console.WriteLine("Name: " + Name + ", Score: " + Score);
         }
 
-        public bool GetGrade()
+        public String GetGrade()
         {
             if (Score >= 85)
             {
-                Console.WriteLine(Name + " Mendapatkan Grade A.");
+                return "A";
             }
             else if (Score >= 70)
             {
-                Console.WriteLine(Name + " Mendapatkan Grade B.");
+                return "B";
             }
             else if (Score >= 55)
             {
-                Console.WriteLine(Name + " Mendapatkan Grade C.");
+                return "C";
             }
             else
             {
-                Console.WriteLine(Name + " Mendapatkan Grade D.");
+                return "D";
             }
-            return true;
         }
 
         public void CheckStatus()

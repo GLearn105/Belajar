@@ -9,7 +9,7 @@ namespace OOP
             // person.SayHello();
             // person.CheckStatus();
             // person.GetInfo();
-            person.Addscore(10);
+            person.AddScore(10);
             person.ReduceScore(5);
 
             Console.WriteLine(person.Score);
