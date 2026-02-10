@@ -64,7 +64,7 @@ namespace OOP
             Console.WriteLine("Name: " + Name + ", Score: " + Score);
         }
 
-        public String GetGrade()
+        public string GetGrade()
         {
             if (Score >= 85)
             {
