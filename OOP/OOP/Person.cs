@@ -11,6 +11,7 @@ namespace OOP
             this.Name = name;
             this.Score = score;
             PersonCount++;
+            Console.WriteLine("Constractor Person called.");
         }
 
         public static int PersonCount;
