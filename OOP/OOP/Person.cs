@@ -10,7 +10,22 @@ namespace OOP
         {
             this.Name = name;
             this.Score = score;
+            PersonCount++;
         }
+
+        public static int PersonCount;
+        
+
+        public string Display()
+        {
+            return $"Name: {Name}, Score: {Score}";
+        }
+
+        public static void ShowTotalPersons()
+        {
+            Console.WriteLine("Total Persons: " + PersonCount);
+        }
+
 
         public string Name
         {
