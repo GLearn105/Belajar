@@ -5,6 +5,7 @@ namespace OOP
     {
         private string name;
         private int score;
+        public static int PersonCount;
 
         public Person(string name, int score)
         {
@@ -13,10 +14,7 @@ namespace OOP
             PersonCount++;
             Console.WriteLine("Constractor Person called.");
         }
-
-        public static int PersonCount;
         
-
         public string Display()
         {
             return $"Name: {Name}, Score: {Score}";
