@@ -3,8 +3,8 @@ namespace OOP
 {
     class Person2
     {
-        private string name;
-        private int score;
+        public string name { get; private set; }
+        public int score { get; private set; }
         public static int PersonCount;
         public readonly int Id;
 
