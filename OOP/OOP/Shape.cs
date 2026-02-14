@@ -7,6 +7,10 @@ namespace OOP
         {
             return 0;
         }
+        public virtual void Display()
+        {
+            Console.WriteLine("This is a shape.");
+        }
     }
     class Rectangle : Shape
     {
@@ -24,6 +28,10 @@ namespace OOP
         {
             return Width * Height;
         }
+        public override void Display()
+        {
+            Console.WriteLine($"This is a rectangle with width {Width} and height {Height}.");
+        }
     }
 
     class Circle : Shape
@@ -39,6 +47,10 @@ namespace OOP
         public override double GetArea()
         {
             return Math.PI * Radius * Radius;
+        }
+        public override void Display()
+        {
+            Console.WriteLine($"This is a circle with radius {Radius}.");
         }
     }
 }

@@ -10,6 +10,8 @@ namespace OOP
             Shape s2 = new Circle (5);
             Console.WriteLine("Area of Rectangle: " + s1.GetArea());
             Console.WriteLine("Area of Circle: " + s2.GetArea());
+            s1.Display();
+            s2.Display();
             
             
             
