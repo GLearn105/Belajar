@@ -5,10 +5,19 @@ namespace OOP
     {
         static void Main()
         {
+            //day17
+            Shape s1 = new Rectangle (5, 10);
+            Shape s2 = new Circle (5);
+            Console.WriteLine("Area of Rectangle: " + s1.GetArea());
+            Console.WriteLine("Area of Circle: " + s2.GetArea());
+            
+            
+            
+            
             //day16
-            Manager manager = new Manager("Eve", 8000, "Sales");
-            Console.WriteLine(manager.ShowManagerInfo());
-            manager.Work();
+            // Manager manager = new Manager("Eve", 8000, "Sales");
+            // Console.WriteLine(manager.ShowManagerInfo());
+            // manager.Work();
 
             
             
