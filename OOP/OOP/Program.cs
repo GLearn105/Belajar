@@ -5,13 +5,22 @@ namespace OOP
     {
         static void Main()
         {
+            //day18
+            Payment payment1 = new CreditCardPayment();
+            Payment payment2 = new CashPayment();
+            payment1.processPayment();
+            payment1.showPaymentType();
+            payment2.processPayment();
+            payment2.showPaymentType();
+            
+            
             //day17
-            Shape s1 = new Rectangle (5, 10);
-            Shape s2 = new Circle (5);
-            Console.WriteLine("Area of Rectangle: " + s1.GetArea());
-            Console.WriteLine("Area of Circle: " + s2.GetArea());
-            s1.Display();
-            s2.Display();
+            // Shape s1 = new Rectangle (5, 10);
+            // Shape s2 = new Circle (5);
+            // Console.WriteLine("Area of Rectangle: " + s1.GetArea());
+            // Console.WriteLine("Area of Circle: " + s2.GetArea());
+            // s1.Display();
+            // s2.Display();
             
             
             
