@@ -3,7 +3,7 @@ namespace OOP
 {
     abstract class D19Shape
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
         public abstract double CalculateArea();
     }
     class D19Circle : D19Shape
