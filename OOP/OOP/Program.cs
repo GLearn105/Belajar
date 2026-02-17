@@ -5,13 +5,23 @@ namespace OOP
     {
         static void Main()
         {
+            
+            //Day19
+            D19Circle circle = new D19Circle (5 );
+            D19Rectangle rectangle = new D19Rectangle (4, 6 );
+            circle.Name = "Circle";
+            rectangle.Name = "Rectangle";
+            circle.CalculateArea();
+            rectangle.CalculateArea();
+            
+            
             //day18
-            Payment payment1 = new CreditCardPayment();
-            Payment payment2 = new CashPayment();
-            payment1.processPayment();
-            payment1.showPaymentType();
-            payment2.processPayment();
-            payment2.showPaymentType();
+            // Payment payment1 = new CreditCardPayment();
+            // Payment payment2 = new CashPayment();
+            // payment1.processPayment();
+            // payment1.showPaymentType();
+            // payment2.processPayment();
+            // payment2.showPaymentType();
             
             
             //day17
