@@ -7,8 +7,8 @@ namespace OOP
         {
             //Day21
             Human human = new Human();  
-            human.work();
-            human.eat();
+            human.Work();
+            human.Eat();
             
             
             

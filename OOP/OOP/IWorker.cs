@@ -3,23 +3,23 @@ namespace OOP
 {
     interface IWorker
     {
-        void work();
+        void Work();
     }
     interface IEateble
     {
-        void eat();
+        void Eat();
     }
 
     public class Human : IWorker, IEateble
     {
-        public void work()
+        public void Work()
         {
-            Console.WriteLine("Human is working.");
+            Console.WriteLine("Human is Working.");
         }
 
-        public void eat()
+        public void Eat()
         {
-            Console.WriteLine("Human is eating.");
+            Console.WriteLine("Human is Eating.");
         }
     }
 }
