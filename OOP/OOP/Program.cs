@@ -5,26 +5,29 @@ namespace OOP
     {
         static void Main()
         {
+            //Day21
+            Human human = new Human();  
+            human.work();
+            human.eat();
+            
+            
+            
+            
+            
             
             //Day20
-            Warrior warrior = new Warrior();
-            Mage mage = new Mage();
-            // warrior.Attack();
-            // warrior.Defend();
-            // mage.Attack();
+            // Warrior warrior = new Warrior();
+            // Mage mage = new Mage();
+            // // warrior.Attack();
+            // // warrior.Defend();
+            // // mage.Attack();
 
-            List<IAttack> attackers = new List<IAttack> { warrior, mage };
-            foreach (var attacker in attackers)
-            {
-                attacker.Attack();
-            }
-            
-            
-            
-            
-            
-            
-            
+            // List<IAttack> attackers = new List<IAttack> { warrior, mage };
+            // foreach (var attacker in attackers)
+            // {
+            //     attacker.Attack();
+            // }
+                       
             
             //Day19
             // D19Circle circle = new D19Circle (5 );
