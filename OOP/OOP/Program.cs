@@ -6,9 +6,10 @@ namespace OOP
         static void Main()
         {
             //Day22
-            Document document = new Document();
-            document.Print();
-            document.Save();
+            IPrintable printable = new Document();
+            printable.Print();
+            ISaveable saveable = new Document();
+            saveable.Save();
             
             
             
