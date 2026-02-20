@@ -5,10 +5,17 @@ namespace OOP
     {
         static void Main()
         {
-            //Day21
-            Human human = new Human();  
-            human.Work();
-            human.Eat();
+            //Day22
+            Document document = new Document();
+            document.Print();
+            document.Save();
+            
+            
+            
+            // //Day21
+            // Human human = new Human();  
+            // human.Work();
+            // human.Eat();
             
             
             
