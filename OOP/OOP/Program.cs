@@ -5,11 +5,20 @@ namespace OOP
     {
         static void Main()
         {
+            //Day23
+            Vehicle electricCar = new ElectricCar();
+            electricCar.Brand = "Tesla";
+            electricCar.Start();
+            ((IElectric)electricCar).Charge();
+            
+            
+            
+            
             //Day22
-            IPrintable printable = new Document();
-            printable.Print();
-            ISaveable saveable = new Document();
-            saveable.Save();
+            // IPrintable printable = new Document();
+            // printable.Print();
+            // ISaveable saveable = new Document();
+            // saveable.Save();
             
             
             
