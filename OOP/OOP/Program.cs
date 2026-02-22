@@ -5,11 +5,22 @@ namespace OOP
     {
         static void Main()
         {
+            //Day24
+            D24Employee D24employee = new D24Employee();
+            D24employee.CalculateSalary();
+            D24EmployeeData employeeData = new D24EmployeeData();
+            employeeData.SaveToDatabase();
+            D24EmployeePayslip employeePayslip = new D24EmployeePayslip();
+            employeePayslip.GeneratePayslip();
+            
+            
+            
+            
             //Day23
-            Vehicle electricCar = new ElectricCar();
-            electricCar.Brand = "Tesla";
-            electricCar.Start();
-            ((IElectric)electricCar).Charge();
+            // Vehicle electricCar = new ElectricCar();
+            // electricCar.Brand = "Tesla";
+            // electricCar.Start();
+            // ((IElectric)electricCar).Charge();
             
             
             
