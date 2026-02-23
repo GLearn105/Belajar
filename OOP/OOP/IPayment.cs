@@ -19,6 +19,14 @@ namespace OOP
             Console.WriteLine("Processing PayPal payment.");
         }
     }
+
+    class CryptoPayment : IPayment
+    {
+        public void ProcessPayment()
+        {
+            Console.WriteLine("Processing cryptocurrency payment.");
+        }
+    }
     class Order 
     {
         private IPayment _paymentMethod;

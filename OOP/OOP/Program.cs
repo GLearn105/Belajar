@@ -8,11 +8,14 @@ namespace OOP
             //Day25
             IPayment creditCardPayment = new D25CreditCardPayment();
             IPayment paypalPayment = new PayPalPayment();
+            IPayment cryptoPayment = new CryptoPayment();
             Order order1 = new Order(creditCardPayment);
             Order order2 = new Order(paypalPayment);
+            Order order3 = new Order(cryptoPayment);
             order1.Checkout();
             order2.Checkout();
-            
+            order3.Checkout();
+
             
             
             //Day24
