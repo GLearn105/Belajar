@@ -5,13 +5,23 @@ namespace OOP
     {
         static void Main()
         {
+            //Day25
+            IPayment creditCardPayment = new D25CreditCardPayment();
+            IPayment paypalPayment = new PayPalPayment();
+            Order order1 = new Order(creditCardPayment);
+            Order order2 = new Order(paypalPayment);
+            order1.Checkout();
+            order2.Checkout();
+            
+            
+            
             //Day24
-            D24Employee D24employee = new D24Employee();
-            D24employee.CalculateSalary();
-            D24EmployeeData employeeData = new D24EmployeeData();
-            employeeData.SaveToDatabase();
-            D24EmployeePayslip employeePayslip = new D24EmployeePayslip();
-            employeePayslip.GeneratePayslip();
+            // D24Employee D24employee = new D24Employee();
+            // D24employee.CalculateSalary();
+            // D24EmployeeData employeeData = new D24EmployeeData();
+            // employeeData.SaveToDatabase();
+            // D24EmployeePayslip employeePayslip = new D24EmployeePayslip();
+            // employeePayslip.GeneratePayslip();
             
             
             
