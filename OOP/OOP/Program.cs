@@ -5,16 +5,27 @@ namespace OOP
     {
         static void Main()
         {
+            //Day26
+            IPaymentMethod creditCardPayment = new D26CreditCardPayment();
+            IPaymentMethod eWalletPayment = new D26EWalletPayment();
+            IPaymentMethod cashPayment = new D26CashPayment();
+            PaymentProcess paymentProcess1 = new PaymentProcess(creditCardPayment);
+            PaymentProcess paymentProcess2 = new PaymentProcess(eWalletPayment);
+            PaymentProcess paymentProcess3 = new PaymentProcess(cashPayment);
+            paymentProcess1.ExecutePayment();
+            paymentProcess2.ExecutePayment();
+            paymentProcess3.ExecutePayment();
+            
             //Day25
-            IPayment creditCardPayment = new D25CreditCardPayment();
-            IPayment paypalPayment = new PayPalPayment();
-            IPayment cryptoPayment = new CryptoPayment();
-            Order order1 = new Order(creditCardPayment);
-            Order order2 = new Order(paypalPayment);
-            Order order3 = new Order(cryptoPayment);
-            order1.Checkout();
-            order2.Checkout();
-            order3.Checkout();
+            // IPayment creditCardPayment = new D25CreditCardPayment();
+            // IPayment paypalPayment = new PayPalPayment();
+            // IPayment cryptoPayment = new CryptoPayment();
+            // Order order1 = new Order(creditCardPayment);
+            // Order order2 = new Order(paypalPayment);
+            // Order order3 = new Order(cryptoPayment);
+            // order1.Checkout();
+            // order2.Checkout();
+            // order3.Checkout();
 
             
             
