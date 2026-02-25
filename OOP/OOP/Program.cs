@@ -5,16 +5,27 @@ namespace OOP
     {
         static void Main()
         {
+            //Day27
+            IProductRepository repo = new ProductRepository();
+            ProductService productService = new ProductService(repo);
+            productService.AddProduct(new Product { Id = 1, Name = "Laptop", Price = 1000 });
+            productService.AddProduct(new Product { Id = 2, Name = "Mouse", Price = 25 });
+            productService.ShowAllProducts();
+            productService.UpdateProduct(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+            productService.DeleteProduct(2);
+            productService.ShowAllProducts();
+            
+            
             //Day26
-            IPaymentMethod creditCardPayment = new D26CreditCardPayment();
-            IPaymentMethod eWalletPayment = new D26EWalletPayment();
-            IPaymentMethod cashPayment = new D26CashPayment();
-            PaymentProcess paymentProcess1 = new PaymentProcess(creditCardPayment);
-            PaymentProcess paymentProcess2 = new PaymentProcess(eWalletPayment);
-            PaymentProcess paymentProcess3 = new PaymentProcess(cashPayment);
-            paymentProcess1.ExecutePayment();
-            paymentProcess2.ExecutePayment();
-            paymentProcess3.ExecutePayment();
+            // IPaymentMethod creditCardPayment = new D26CreditCardPayment();
+            // IPaymentMethod eWalletPayment = new D26EWalletPayment();
+            // IPaymentMethod cashPayment = new D26CashPayment();
+            // PaymentProcess paymentProcess1 = new PaymentProcess(creditCardPayment);
+            // PaymentProcess paymentProcess2 = new PaymentProcess(eWalletPayment);
+            // PaymentProcess paymentProcess3 = new PaymentProcess(cashPayment);
+            // paymentProcess1.ExecutePayment();
+            // paymentProcess2.ExecutePayment();
+            // paymentProcess3.ExecutePayment();
             
             //Day25
             // IPayment creditCardPayment = new D25CreditCardPayment();
