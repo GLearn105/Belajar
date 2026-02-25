@@ -23,7 +23,7 @@ namespace OOP
         public void Add(Product product)
         {
             products.Add(product);
-            Console.WriteLine($"Product '{product.Name}' added successfully.");
+            // Console.WriteLine($"Product '{product.Name}' added successfully.");
         }
         public void Update(Product product)
         {
@@ -41,16 +41,16 @@ namespace OOP
         }
         public void Delete(int id)
         {
-            var product = GetById(id);
+             var product = GetById(id);
             if (product != null)
-            {
-                products.Remove(product);
-                Console.WriteLine($"Product with ID {id} deleted successfully.");
-            }
-            else
-            {
+             {
+                 products.Remove(product);
+                 Console.WriteLine($"Product with ID {id} deleted successfully.");
+             }
+             else
+             {
                 Console.WriteLine($"Product with ID {id} not found.");
-            }
+             }
         }
 
         public List<Product> GetAll()
@@ -73,6 +73,7 @@ namespace OOP
         public void AddProduct(Product product)
         {
             productRepository.Add(product);
+            Console.WriteLine($"Product '{product.Name}' added successfully.");
         }
         public void UpdateProduct(Product product)
         {
