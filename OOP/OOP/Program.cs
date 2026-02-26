@@ -5,15 +5,28 @@ namespace OOP
     {
         static void Main()
         {
+            //Day28
+            var uow = new UnitOfWork();
+            uow.Product.Add(new Product { Id = 1, Name = "Laptop", Price = 1000 });
+            uow.Product.Add(new Product { Id = 2, Name = "Mouse"});
+
+            uow.Commit();
+            foreach (var product in uow.Product.GetAll())
+            {
+                Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
+            }
+            
+            
+            
             //Day27
-            IProductRepository repo = new ProductRepository();
-            ProductService productService = new ProductService(repo);
-            productService.AddProduct(new Product { Id = 1, Name = "Laptop", Price = 1000 });
-            productService.AddProduct(new Product { Id = 2, Name = "Mouse", Price = 25 });
-            productService.ShowAllProducts();
-            productService.UpdateProduct(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
-            productService.DeleteProduct(2);
-            productService.ShowAllProducts();
+            // IProductRepository repo = new ProductRepository();
+            // ProductService productService = new ProductService(repo);
+            // productService.AddProduct(new Product { Id = 1, Name = "Laptop", Price = 1000 });
+            // productService.AddProduct(new Product { Id = 2, Name = "Mouse", Price = 25 });
+            // productService.ShowAllProducts();
+            // productService.UpdateProduct(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+            // productService.DeleteProduct(2);
+            // productService.ShowAllProducts();
             
             
             //Day26
