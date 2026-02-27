@@ -17,6 +17,7 @@ namespace OOP
         void Add(T Entity);
         void Update(T Entity);
         void Delete(int id);
+        void Remove (T Entity);
         List<T> GetAll();
         T GetById(int id);
     }
@@ -26,6 +27,8 @@ namespace OOP
         void Add(Product product);
         void Update(Product product);
         void Delete(int id);
+
+        void Remove(Product product);
         List<Product> GetAll();
         Product GetById(int id);
     }
