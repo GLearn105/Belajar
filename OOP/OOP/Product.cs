@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 namespace OOP
 {
     class Product
@@ -17,7 +19,7 @@ namespace OOP
         void Add(T Entity);
         void Update(T Entity);
         void Delete(int id);
-        void Remove (T Entity);
+        void Remove (int id);
         void RemoveAll ();
         List<T> GetAll();
         T GetById(int id);
@@ -54,7 +56,12 @@ namespace OOP
             if (product != null)
              products.Remove(product);           
         }
-        public void Remove(Product entity) => products.Remove(entity);
+        public void Remove(int id)
+        {
+             var product = GetById(id);
+            if (product != null)
+             products.Remove(product);           
+        }
         public void RemoveAll() => products.Clear();
 
         public List<Product> GetAll() => products;
@@ -80,7 +87,12 @@ namespace OOP
             if (category != null)
              categories.Remove(category);           
         }
-        public void Remove(Category entity) => categories.Remove(entity);
+        public void Remove(int id)
+        {
+             var category = GetById(id);
+            if (category != null)
+             categories.Remove(category);           
+        }
         public void RemoveAll() => categories.Clear();
 
         public List<Category> GetAll() => categories;
@@ -89,8 +101,8 @@ namespace OOP
     }
     class ProductService
     {
-        private readonly IProductRepository productRepository;
-        public ProductService(IProductRepository productRepository)
+        private readonly IRepository<Product> productRepository;
+        public ProductService(IRepository<Product> productRepository)
         {
             this.productRepository = productRepository;
         }
@@ -109,10 +121,10 @@ namespace OOP
             productRepository.Delete(id);
             Console.WriteLine($"Product with ID {id} deleted successfully.");
         }
-        public void RemoveProduct(Product product)
+        public void RemoveProduct(int id)
         {
-            productRepository.Remove(product);
-            Console.WriteLine($"Product '{product.Name}' removed successfully.");
+            productRepository.Remove(id);
+            Console.WriteLine($"Product with ID {id} removed successfully.");
         }
         public void RemoveAllProducts()
         {
