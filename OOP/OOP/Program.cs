@@ -9,6 +9,11 @@ namespace OOP
             var uow = new UnitOfWork();
             uow.Product.Add(new Product { Id = 1, Name = "Laptop", Price = 1000 });
             uow.Product.Add(new Product { Id = 2, Name = "Mouse"});
+            uow.Product.Update(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+            uow.Product.Delete(2);
+            uow.Product.Remove(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+            uow.Product.RemoveAll();
+            uow.Product.Add(new Product { Id = 3, Name = "Keyboard", Price = 50 });
 
             uow.Commit();
             foreach (var product in uow.Product.GetAll())
