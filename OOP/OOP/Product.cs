@@ -19,6 +19,7 @@ namespace OOP
         void Add(T Entity);
         void Update(T Entity);
         void Delete(int id);
+        void DeleteProduct (int id);
         void Remove (int id);
         void RemoveAll ();
         List<T> GetAll();
@@ -30,7 +31,7 @@ namespace OOP
         void Add(Product product);
         void Update(Product product);
         void Delete(int id);
-
+        void DeleteProduct (int id);
         void Remove(Product product);
         void RemoveAll();
         List<Product> GetAll();
@@ -51,6 +52,12 @@ namespace OOP
             }
         }
         public void Delete(int id)
+        {
+             var product = GetById(id);
+            if (product != null)
+             products.Remove(product);           
+        }
+        public void DeleteProduct(int id)
         {
              var product = GetById(id);
             if (product != null)
@@ -82,6 +89,15 @@ namespace OOP
             }
         }
         public void Delete(int id)
+        {
+             var category = GetById(id);
+            if (category != null)
+            {
+                Console.WriteLine($"Category '{category.Name}' Not Found");
+            }
+             categories.Remove(category);           
+        }
+        public void DeleteProduct(int id)
         {
              var category = GetById(id);
             if (category != null)

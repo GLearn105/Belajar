@@ -5,19 +5,34 @@ namespace OOP
     {
         static void Main()
         {
+            //day29
+                var productRepo = new ProductRepository();
+                var productService = new ProductService(productRepo);
+                productService.AddProduct(new Product { Id = 1, Name = "Laptop", Price = 1000 });
+                productService.AddProduct(new Product { Id = 2, Name = "Mouse", Price = 25 });
+                productService.ShowAllProducts();
+                productService.UpdateProduct(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+                productService.DeleteProduct(2);
+                productService.DeleteProduct(3); // Testing deletion of non-existent product
+            
+            
+            
+            
+            
+            
             //Day28
-            var uow = new UnitOfWork();
-            var productservice = new ProductService(uow.Product);
-            uow.Product.Add(new Product { Id = 1, Name = "Laptop", Price = 1000 });
-            uow.Product.Add(new Product { Id = 2, Name = "Mouse"});
-            uow.Product.Update(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
+            // var uow = new UnitOfWork();
+            // var productservice = new ProductService(uow.Product);
+            // uow.Product.Add(new Product { Id = 1, Name = "Laptop", Price = 1000 });
+            // uow.Product.Add(new Product { Id = 2, Name = "Mouse"});
+            // uow.Product.Update(new Product { Id = 1, Name = "Gaming Laptop", Price = 1200 });
             
 
-            uow.Commit();
-            foreach (var product in uow.Product.GetAll())
-            {
-                Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
-            }
+            // uow.Commit();
+            // foreach (var product in uow.Product.GetAll())
+            // {
+            //     Console.WriteLine($"Product: {product.Name}, Price: {product.Price}");
+            // }
             
             
             
