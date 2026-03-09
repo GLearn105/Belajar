@@ -19,23 +19,8 @@ namespace OOP
         void Add(T Entity);
         void Update(T Entity);
         void Delete(int id);
-        void DeleteProduct (int id);
-        void Remove (int id);
-        void RemoveAll ();
         List<T> GetAll();
         T GetById(int id);
-    }
-
-    interface IProductRepository
-    {
-        void Add(Product product);
-        void Update(Product product);
-        void Delete(int id);
-        void DeleteProduct (int id);
-        void Remove(Product product);
-        void RemoveAll();
-        List<Product> GetAll();
-        Product GetById(int id);
     }
     class ProductRepository : IRepository<Product>
     {
@@ -94,6 +79,7 @@ namespace OOP
             if (category != null)
             {
                 Console.WriteLine($"Category '{category.Name}' Not Found");
+                return;
             }
              categories.Remove(category);           
         }
@@ -136,16 +122,6 @@ namespace OOP
         {
             productRepository.Delete(id);
             Console.WriteLine($"Product with ID {id} deleted successfully.");
-        }
-        public void RemoveProduct(int id)
-        {
-            productRepository.Remove(id);
-            Console.WriteLine($"Product with ID {id} removed successfully.");
-        }
-        public void RemoveAllProducts()
-        {
-            productRepository.RemoveAll();
-            Console.WriteLine("All products removed successfully.");
         }
         public void ShowAllProducts()
         {
