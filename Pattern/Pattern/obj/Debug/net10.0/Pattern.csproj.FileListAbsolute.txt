@@ -1,0 +1,15 @@
+C:\Belajar\Pattern\Pattern\bin\Debug\net10.0\Pattern.exe
+C:\Belajar\Pattern\Pattern\bin\Debug\net10.0\Pattern.deps.json
+C:\Belajar\Pattern\Pattern\bin\Debug\net10.0\Pattern.runtimeconfig.json
+C:\Belajar\Pattern\Pattern\bin\Debug\net10.0\Pattern.dll
+C:\Belajar\Pattern\Pattern\bin\Debug\net10.0\Pattern.pdb
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.AssemblyInfoInputs.cache
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.AssemblyInfo.cs
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.csproj.CoreCompileInputs.cache
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.sourcelink.json
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.dll
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\refint\Pattern.dll
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.pdb
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\Pattern.genruntimeconfig.cache
+C:\Belajar\Pattern\Pattern\obj\Debug\net10.0\ref\Pattern.dll
