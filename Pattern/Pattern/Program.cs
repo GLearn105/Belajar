@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Pattern.Dtos;
+using Pattern.Entity;
+using Pattern.Repositories;
+using Pattern.Services;
+using System;
 namespace Pattern
 {
     class Program
@@ -13,9 +17,9 @@ namespace Pattern
               service.AddProduct(dto);
                 service.AddProduct(dto2);
               var products = service.GetProducts();
-                foreach (var product in products)
+                foreach (var p in products)
                 {
-                    Console.WriteLine($"Name: {product.Name}, Price: {product.Price}");
+                Console.WriteLine(p.Name +" " + p.Price);
                 }
         }
     }

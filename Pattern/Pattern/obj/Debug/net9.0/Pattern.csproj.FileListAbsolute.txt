@@ -1,0 +1,15 @@
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.GeneratedMSBuildEditorConfig.editorconfig
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.AssemblyInfoInputs.cache
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.AssemblyInfo.cs
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.csproj.CoreCompileInputs.cache
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.sourcelink.json
+C:\Galang\Pattern\Pattern\bin\Debug\net9.0\Pattern.exe
+C:\Galang\Pattern\Pattern\bin\Debug\net9.0\Pattern.deps.json
+C:\Galang\Pattern\Pattern\bin\Debug\net9.0\Pattern.runtimeconfig.json
+C:\Galang\Pattern\Pattern\bin\Debug\net9.0\Pattern.dll
+C:\Galang\Pattern\Pattern\bin\Debug\net9.0\Pattern.pdb
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.dll
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\refint\Pattern.dll
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.pdb
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\Pattern.genruntimeconfig.cache
+C:\Galang\Pattern\Pattern\obj\Debug\net9.0\ref\Pattern.dll
