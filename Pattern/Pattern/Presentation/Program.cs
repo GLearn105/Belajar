@@ -3,6 +3,7 @@ using Pattern.Application.Services;
 using Pattern.Domain.Interfaces;
 using Pattern.Entity;
 using Pattern.Infrastructure;
+using Pattern.Infrastructure.Repositories;
 using System;
 namespace Pattern.Presentation
 {
