@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Application.Repositories
+namespace Pattern.Domain.Interfaces
 {
     interface IproductRepository
     {

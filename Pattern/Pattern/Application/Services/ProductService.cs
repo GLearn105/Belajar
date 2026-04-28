@@ -1,5 +1,6 @@
-﻿using Pattern.Application.Repositories;
-using Pattern.Domain.Dtos;
+﻿using Pattern.Application.Dtos;
+using Pattern.Domain.Entities;
+using Pattern.Domain.Interfaces;
 using Pattern.Entity;
 using System;
 using System.Collections.Generic;

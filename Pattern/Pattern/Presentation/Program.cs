@@ -1,6 +1,6 @@
-﻿using Pattern.Application.Repositories;
+﻿using Pattern.Application.Dtos;
 using Pattern.Application.Services;
-using Pattern.Domain.Dtos;
+using Pattern.Domain.Interfaces;
 using Pattern.Entity;
 using Pattern.Infrastructure;
 using System;
@@ -24,4 +24,5 @@ namespace Pattern.Presentation
                 }
         }
     }
+    //day32
 }

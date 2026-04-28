@@ -1,10 +1,10 @@
-﻿using Pattern.Domain.Dtos;
+﻿using Pattern.Application.Dtos;
 using Pattern.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Mapper
+namespace Pattern.Application.Mapper
 {
     class ProductMapper
     {

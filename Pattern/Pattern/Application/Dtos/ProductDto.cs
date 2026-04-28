@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Domain.Dtos
+namespace Pattern.Application.Dtos
 {
     public class ProductDTO
     {
