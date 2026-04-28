@@ -1,5 +1,5 @@
 using System;
-namespace Pattern.Entity
+namespace Pattern.Domain.Entities
 {
     public class Product
     {

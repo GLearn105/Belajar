@@ -1,5 +1,5 @@
-﻿using Pattern.Dtos;
-using Pattern.Entity;
+﻿using Pattern.Domain.Dtos;
+using Pattern.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;

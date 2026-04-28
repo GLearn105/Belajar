@@ -1,9 +1,9 @@
-﻿using Pattern.Entity;
+﻿using Pattern.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Repositories
+namespace Pattern.Application.Repositories
 {
     interface IproductRepository
     {

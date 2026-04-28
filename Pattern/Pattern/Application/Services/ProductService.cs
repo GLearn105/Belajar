@@ -1,11 +1,11 @@
-﻿using Pattern.Dtos;
+﻿using Pattern.Application.Repositories;
+using Pattern.Domain.Dtos;
 using Pattern.Entity;
-using Pattern.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Services
+namespace Pattern.Application.Services
 {
 
     class ProductService

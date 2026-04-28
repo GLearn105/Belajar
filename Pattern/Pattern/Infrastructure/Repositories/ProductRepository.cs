@@ -1,9 +1,10 @@
-﻿using Pattern.Entity;
+﻿using Pattern.Application.Repositories;
+using Pattern.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pattern.Repositories
+namespace Pattern.Infrastructure
 {
     class ProductRepository : IproductRepository
     {

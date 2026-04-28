@@ -1,9 +1,10 @@
-﻿using Pattern.Dtos;
+﻿using Pattern.Application.Repositories;
+using Pattern.Application.Services;
+using Pattern.Domain.Dtos;
 using Pattern.Entity;
-using Pattern.Repositories;
-using Pattern.Services;
+using Pattern.Infrastructure;
 using System;
-namespace Pattern
+namespace Pattern.Presentation
 {
     class Program
     {
