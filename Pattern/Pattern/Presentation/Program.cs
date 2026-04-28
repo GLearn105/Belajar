@@ -25,5 +25,4 @@ namespace Pattern.Presentation
                 }
         }
     }
-    //day32
 }
